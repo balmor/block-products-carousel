@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Generic Block Products HTML/LESS for jCarousel 0.3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generic HTML/LESS for jCarousel 0.3">
+    <meta name="author" content="Damian Duda">
+
+    <!-- Le styles -->
+    <link rel="stylesheet/less" type="text/css" href="less/main.less">
+
+    <script>less = {}; less.env = 'development';</script>
+    <script src="js/less-1.3.1.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="span12">
+
+            <h1>Generic Block Products HTML/LESS for jCarousel 0.3</h1>
+            
+            <h3>Default block carousel</h3>
+
+            <!-- Wrapper Product Block -->
+            <div class="product-block display-carousel">
+                <!-- Block Title -->
+                <h3 class="block-title"><span class="icon"></span>BLOCK TITLE</h3>
+                <h5 class="block-subtitle">BLOCK SUB-TITLE</h5>
+                <!-- Product Stage -->
+                <div class="product-stage">
+                    <!-- Product Items -->
+                    <ul class="product-items">
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">1</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">2</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li> 
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">3</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li> 
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">4</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li>             
+                    </ul>
+                </div>
+                <!-- Control -->
+                <div class="control-wrap">
+                    <a class="control jcarousel-prev" href="#"><span>prev</span></a>
+                    <a class="control jcarousel-next" href="#"><span>next</span></a>
+                </div>
+                <!-- Pagination -->
+                <div class="jcarousel-pagination"></div>
+
+                <!-- Bottom text -->
+                <div class="bottom-text">
+                    <a href="#"><span>VIEW MORE</span></a>
+                </div>
+            </div>
+
+            <!-- Wrapper Product Block -->
+            <div class="product-block display-carousel boonty bons">
+                <!-- Block Title -->
+                <h3 class="block-title"><span class="icon"></span>BLOCK TITLE</h3>
+                <h5 class="block-subtitle">BLOCK SUB-TITLE</h5>
+                <!-- Product Stage -->
+                <div class="product-stage">
+                    <!-- Product Items -->
+                    <ul class="product-items">
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">1</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">2</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li> 
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">3</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li> 
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">4</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li>
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">1</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">2</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li> 
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">3</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li> 
+                        <li itemtype="http://data-vocabulary.org/Product" itemscope="">
+                            <!-- Item -->
+                            <div class="product-item">
+                                <!-- Number -->
+                                <span class="number">4</span>
+                                <!-- Product image -->
+                                <!-- Product image with link -->
+                                <a class="image-link" href="#" title="" ><img width="108" height="77" alt="" src="http://placehold.it/108x77/D8EA72/666666" /></a>
+                                <!-- Product image without link -->
+                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <!-- Product detail -->
+                                <div class="detail">
+                                    <!-- Product info -->
+                                    <div class="info">
+                                        <!-- Product name -->
+                                        <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
+                                        <!-- Product category -->
+                                        <a class="product-category" href="#" itemprop="category">Product category</a>
+                                        <!-- Product discription -->
+                                        <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <!-- Product rating -->
+                                    <div class="rating" title="Quality" data-rating="4"></div>
+                                    <!-- Block price -->
+                                    <div class="block-price" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
+                                        <meta itemprop="currency" content="USD" />
+                                        <p class="price save">
+                                            <!-- Save price -->
+                                            <span class="save-price"> -29% </span>
+                                            <!-- Previous price -->
+                                            <span class="previous-price"> &euro; 45,00 </span>
+                                        </p>
+                                        <!-- Current price -->
+                                        <p class="price" itemprop="price"> &euro; 32,00 </p>
+                                    </div>
+                                    <!-- Product buttons -->
+                                    <div class="product-buttons">
+                                        <!-- Button add to cart -->
+                                        <a class="btn add-to-cart" href="#"><span>Add to cart</span></a>
+                                        <!-- Button add to wishlist -->
+                                        <a class="btn add-to-wishlist" href="#"><span>Add to wishlist</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li>                                                                                   
+                    </ul>
+                </div>
+                <!-- Control -->
+                <div class="control-wrap">
+                    <a class="control jcarousel-prev" href="#"><span>prev</span></a>
+                    <a class="control jcarousel-next" href="#"><span>next</span></a>
+                </div>
+                <!-- Pagination -->
+                <div class="jcarousel-pagination"></div>
+
+                <!-- Bottom text -->
+                <div class="bottom-text">
+                    <a href="#"><span>VIEW MORE</span></a>
+                </div>
+            </div>            
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/ui/1.9.0/jquery-ui.js" type="text/javascript"></script>
+
+    <script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel-autoscroll.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel-control.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel-pagination.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel-scrollintoview.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel-core.min.js" type="text/javascript"></script>
+    
+
+    <script type="text/javascript">
+        $(function() {
+
+            
+
+            $('.display-carousel .product-stage').jcarousel({
+                'wrap': 'both',
+                'animation': 'slow'
+            });
+
+            $('.display-carousel .product-stage').jcarouselAutoscroll({
+                'target': '+=2'
+            });
+
+            $('.display-carousel .jcarousel-prev')
+                .on('inactive.jcarouselcontrol', function() {
+                    $(this).addClass('inactive');
+                })
+                .on('active.jcarouselcontrol', function() {
+                    $(this).removeClass('inactive');
+                })
+                .jcarouselControl({
+                    target: '-=2'
+                });
+
+            $('.display-carousel .jcarousel-next')
+                .on('inactive.jcarouselcontrol', function() {
+                    $(this).addClass('inactive');
+                })
+                .on('active.jcarouselcontrol', function() {
+                    $(this).removeClass('inactive');
+                })
+                .jcarouselControl({
+                    target: '+=2'
+                });                          
+
+            $('.jcarousel-pagination').jcarouselPagination({
+
+            });
+
+            $('.bons .product-stage').jcarousel({
+                'wrap': null
+            });
+
+            $('.bons .product-stage').jcarouselAutoscroll({
+                'target': null
+            }); 
+
+             $('.bons .jcarousel-prev')
+                .on('inactive.jcarouselcontrol', function() {
+                    $(this).addClass('inactive');
+                })
+                .on('active.jcarouselcontrol', function() {
+                    $(this).removeClass('inactive');
+                })
+                .jcarouselControl({
+                    target: '-=4'
+                });
+
+            $('.bons .jcarousel-next')
+                .on('inactive.jcarouselcontrol', function() {
+                    $(this).addClass('inactive');
+                })
+                .on('active.jcarouselcontrol', function() {
+                    $(this).removeClass('inactive');
+                })
+                .jcarouselControl({
+                    target: '+=4'
+                });                        
+        });
+
+        $(function() {
+            $('.jcarousel-pagination')
+                .delegate('a', 'active.jcarouselcontrol', function() {
+                    $(this).addClass('active');
+                })
+                .delegate('a', 'inactive.jcarouselcontrol', function() {
+                    $(this).removeClass('active');
+                });
+
+            create();
+            createPagination();
+        });
+
+    </script>
+
+
+</body>
+</html>

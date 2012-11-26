@@ -1,0 +1,331 @@
+/**
+ * Generic Blocks for Products
+ *
+ * @category    design
+ * @author      Damian Duda <dduda@nexway.com>
+ * @package     base_default
+ *
+ * version 0.1.2
+ *
+ */
+
+// GENRIC BLOCKS
+
+/* Wrapper Product Block */
+.product-block {
+	clear: both;
+	position: relative;
+	width: @product-block-width;
+	height: @product-block-height;
+	margin: @product-block-margin;
+	padding: @product-block-padding;	
+	#gradient .vertical(@product-block-gradient-start,@product-block-gradient-end);
+	.border-radius(@product-block-border-radius);
+	border: @product-block-border;
+	.box-shadow(@product-block-shadow);
+	font-size: @product-block-font-size;
+
+	/* Block Title */
+	.block-title {
+		position: relative;
+		display: @product-block-title-display;
+		height: @product-block-title-height;
+		margin: @product-block-title-margin;
+		padding: @product-block-title-padding;
+		#gradient .vertical(@product-block-title-gradient-start,@product-block-title-gradient-end);
+		.border-radius(@product-block-title-border-radius);
+		border: @product-block-title-border;
+		.box-shadow(@product-block-title-shadow);
+		color: @product-block-title-color;
+		font-size: @product-block-title-font-size;
+		line-height: @product-block-title-line-height;
+	}
+
+	.block-subtitle {
+		display: @product-block-subtitle-display;
+		height: @product-block-subtitle-height;
+		background: @product-block-subtitle-background;
+		margin: @product-block-subtitle-margin;
+		padding: @product-block-subtitle-padding;
+		border: @product-block-subtitle-border;
+		.box-shadow(@product-block-subtitle-shadow);
+		color: @product-block-subtitle-color;
+		font-size: @product-block-subtitle-font-size;
+		line-height: @product-block-subtitle-line-height;
+	}
+
+	/* Product Stage */
+	.product-stage {
+
+		/* Product Items */
+		.product-items {
+			display: @product-block-items-display;
+			overflow: @product-block-items-oveflow;
+			width: @product-block-items-width;
+			height: @product-block-items-height;
+			margin: @product-block-items-margin;
+			padding: @product-block-items-padding;	
+			#gradient .vertical(@product-block-items-gradient-start,@product-block-items-gradient-end);
+			border: @product-block-items-border;	
+			.box-shadow(@product-block-items-shadow);	
+			
+			li {
+				float: @product-block-li-float;
+				width: @product-block-li-width;
+				height: @product-block-li-height;
+				margin: @product-block-li-margin;
+				padding: @product-block-li-padding;	
+				#gradient .vertical(@product-block-li-gradient-start,@product-block-li-gradient-end);
+				.border-radius(@product-block-li-border-radius);
+				border: @product-block-li-border;	
+				.box-shadow(@product-block-li-shadow);	
+
+				/* Product Item*/
+				.product-item {
+					
+					/* Product List Number */
+					.number {
+						display: @product-block-number-display;
+						width: @product-block-number-width;
+						height: @product-block-number-height;
+						margin: @product-block-number-margin;
+						padding: @product-block-number-padding;
+						border: @product-block-number-border;
+						color: @product-block-number-color;
+						font-size: @product-block-number-font-size;
+						line-height: @product-block-number-line-height;
+					}
+
+					/* Product Image with link */
+					.image-link {
+						display: @product-block-image-link-display;
+						width: @product-block-image-link-width;
+						height: @product-block-image-link-height;
+						margin: @product-block-image-link-margin;
+						padding: @product-block-image-link-padding;
+						border: @product-block-image-link-border;	
+
+						img {
+							width: @product-block-image-link-img-width;
+							height: @product-block-image-link-img-height;
+							margin: @product-block-image-link-img-margin;
+							padding: @product-block-image-link-img-padding;
+							border: @product-block-image-link-img-border;							
+						}
+					}
+
+					/* Product Image without link */
+					.image {
+						display: @product-block-image-display;
+						width: @product-block-image-width;
+						height: @product-block-image-height;
+						margin: @product-block-image-margin;
+						padding: @product-block-image-padding;
+						border: @product-block-image-border;			
+					}
+
+					/* Product detail */
+					.detail {
+						display: @product-block-detail-display;
+
+						/* Product info */
+						.info {
+							display: @product-block-info-display;
+
+							/* Product name */
+							.product-name {
+								display: @product-block-info-name-display;
+							}
+
+							/* Product category */
+							.product-category {
+								display: @product-block-info-category-display;
+							}
+
+							/* Product discription */
+							.discription {
+								display: @product-block-info-discription-display;
+							}
+						}
+
+						/* Product rating */
+						.rating { 
+							display: @product-block-rating-display;
+						}
+
+						/* Block price */
+						.block-price {
+							display: @product-block-wrap-price-display;
+
+							/* Current price */
+							.price {
+								display: @product-block-price-display;
+
+								&.save {
+									display: @product-block-save-display;
+
+									/* Save price */
+									.save-price {
+										display: @product-block-save-price-display;
+									}
+
+									/* Previous price */
+									.previous-price {
+										display: @product-block-previous-price-display;
+									}
+								}
+							}
+						}
+
+						/* Product buttons */
+						.product-buttons {
+							display: @product-block-buttons-display;
+
+							/* Buttons */
+							.btn {
+								display: @product-block-btn-display;
+
+								/* Button add to cart */
+								&.add-to-cart {
+									display: @product-block-btn-add-to-cart;
+								}
+
+								/* Button add to wishlist */
+								&.add-to-wishlist {
+									display: @product-block-btn-add-to-wishlist;
+								}
+							}
+						}
+					}
+				}			
+			}	
+		}
+	}
+
+    /* Control */
+    .control-wrap {
+    	display: @block-carousel-control-display;
+    }
+
+    /* Pagination */
+    .jcarousel-pagination {
+        display: @block-carousel-pagination-display;
+    }
+
+	/* Bottom text */
+	.bottom-text {
+		display: @product-block-bottom-text-display;
+	}
+
+
+	// PRODUCT DISPLAY
+
+	/* Display Product In Column */
+	&.display-column {
+	
+	}
+
+	/* Display Product In List */
+	&.display-list {
+
+		.product-items {
+
+			li {
+				float: @product-block-list-large-items-li-float;
+				width: @product-block-list-large-items-li-width;
+
+				.detail {
+					display: @product-block-list-large-detail-display;
+					width: @product-block-list-large-detail-width;
+					vertical-align: middle;
+					.ie7-inline-block;
+
+					.info {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+	/* Display Product In Grid */
+	&.display-grid {
+
+		.product-items {
+
+			li {
+				float: @product-block-grid-items-li-float;
+				width: @product-block-grid-items-li-width;
+
+				.detail {
+					display: @product-block-grid-detail-display;
+				}
+			}
+		}
+	}	
+
+	/* Display Carousel */
+	&.display-carousel {
+
+		.product-stage {
+			position: relative;
+	        overflow: hidden;
+	        /* You need at least a height, adjust this to your needs */
+	        height: @carousel-stage-height;
+
+	        .product-items {
+	            width: 20000em;
+	            position: absolute;
+	            list-style: none;
+	            margin: 0;
+	            padding: 0;
+
+	        	li {
+	                float: @carousel-li-float;
+	                width: @carousel-li-width;
+
+	                .product-item {
+	                	border: @carousel-item-border;
+	                }
+	        	}
+	        }
+		}
+
+	    /* Control */
+	    .control-wrap {
+	        display: @carousel-control-display;
+
+	        .control {
+
+	            &.inactive {
+	                cursor: default;
+	            }
+
+	            span {
+	                
+	            }
+
+	            &.jcarousel-prev {
+	                
+	            }
+
+	            &.jcarousel-next {
+	                
+	            }
+	        }
+	    }
+
+	    /* Pagination */
+	    .jcarousel-pagination {
+	        display: @carousel-pagination-display;
+
+	        a {
+
+	            &.active {
+	                cursor: default;
+	                color: @red;
+	            }
+	        }
+	    }		
+	}
+}

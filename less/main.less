@@ -1,0 +1,249 @@
+/*
+ * @author  Damian Duda <dduda@nexway.com>
+ */
+
+// Bootstrap
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+@import "fonts.less";
+
+@import "vars-blocks.less";
+@import "blocks-foundation.less";
+
+@import "custom-styles.less";
+
+
+
+
+// ---GENERAL SYTLE---
+
+
+// MY SHORTCUTS
+
+// Apperance
+.appearance (@appearance: none) {
+    -webkit-appearance: @appearance;
+    -moz-appearance: @appearance;
+    -ms-appearance: @arguments;
+    -o-appearance: @arguments;
+    appearance: @appearance;
+}
+
+// Sizing shortcuts
+.size(@size) {
+  width: @size;
+  height: @size;
+}
+.size(@height, @width) {
+  width: @width;
+  height: @height;
+}
+.square(@size) {
+  .size(@size);
+}
+
+.hide-texts() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+}
+
+
+
+// TYPE
+
+html, body{ height:100%; }
+
+body {
+    background: @body-background-color;
+    font: 10px @font-family-1;
+    color: @main-text-color;
+    border-top: 3px solid @green;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: @gray;
+    font-family: @font-family-1;
+}
+
+h1 {
+    padding: 10px 0 0;
+    text-align: center;
+    border-top: 3px dashed @green;
+    font-family: @font-family-2;
+}
+
+h3 {
+    line-height: 50px;
+    color: @orange;
+    font-weight: 100;
+    padding-top: 20px;
+    font-family: @font-family-2;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: @blue;
+    &:hover {
+        color: @blueDark;
+        text-decoration: none;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: none;
+}
+
+// FORM
+
+input[type="search"], input[type="text"], input[type="password"], select {
+    background: @white;
+    border: 1px solid #ccc;
+    @shadow:inset 0 1px 2px rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.5);
+    .box-shadow(@shadow);
+    color: @black;
+    .border-radius(20px);
+    padding: 5px 15px;
+    height: 18px;
+    line-height: 18px;
+    font: 700 12px @font-family-1;
+
+    &:focus {
+        background: darken(@white,10%);
+        .box-shadow(@shadow);
+    }
+}
+
+select {
+    height: 30px;
+    line-height: 18px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {
+        -webkit-appearance: none;
+        display: inline-block;
+        height: 18px;
+        padding: 5px 10px;
+        line-height: 18px;
+        background: @white url("@{image-path}/sub.png") no-repeat right center;
+        &:focus {
+        background: darken(@white,10%) url("@{image-path}/sub.png") no-repeat right center;
+        }
+    }
+    select {
+        height: 30px;
+        /* In IE7, the height of the select element cannot be changed by height, only font-size /
+        *margin-top: 4px;
+        / For IE7, add top margin to align select with labels */
+        line-height: 11px;
+    }
+    select {
+        width: 220px;
+    }
+    select[multiple], select[size] {
+        height: auto;
+    }
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    margin: 0;
+    width: auto !important;
+    border: none;
+    position: relative;
+    padding: 0;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        background-color: @white;
+        .border-radius(50%);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(0,0,0,.3);
+        width: 11px;
+        height: 11px;
+        line-height: 16px;
+        -webkit-box-shadow: inset 1px 2px 3px rgba(0,0,0,.2), 0 1px 0 rgba(102, 102, 102, 0.2);
+        top: -2px;
+    }
+
+    &:checked {
+        &:before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            .border-radius(2px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 100;
+            text-shadow: 0 1px #111;
+            background: #9aca0b;
+            margin-left: -3px;
+            margin-top: -3px;
+        }
+    }
+}
+
+input[type="checkbox"] {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+textarea {
+    background: #8b260c;
+    border: 0;
+    @shadow: inset 0 1px 2px rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.5);
+    .box-shadow(@shadow);
+    color: @white;
+    font: 700 12px @font-family-1;
+    line-height: 20px;
+    padding: 5px 15px;
+    .border-radius(6px);
+}
+
+label {
+    font: 700 11px @font-family-1;
+    color: @black;
+}
+
+label.checkbox {
+    margin-top: 5px;
+    font-weight: 100;
+    color: #9e9e9e;
+    float: left;
+    a {
+        color: #308dbf;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// BUTTON
+
+button {
+    border: 0;
+}
+
+
+///////////////////////// OTHER SYTLE //////////////////////
+
+.container {
+    padding-bottom: 100px;
+}
