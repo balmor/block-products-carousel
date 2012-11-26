@@ -2,7 +2,7 @@ Generic HTML/LESS Block Products/Carousel (jCarousel 0.3)
 ================
 
 <h2>Version</h2>
-version 0.1.2
+version 0.1.3
 
 <h2>Documentation</h2>
 
