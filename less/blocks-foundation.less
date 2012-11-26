@@ -82,7 +82,7 @@
 
 				/* Product Item*/
 				.product-item {
-					
+
 					/* Product List Number */
 					.number {
 						display: @product-block-number-display;
@@ -234,14 +234,19 @@
 				float: @product-block-list-large-items-li-float;
 				width: @product-block-list-large-items-li-width;
 
-				.detail {
-					display: @product-block-list-large-detail-display;
-					width: @product-block-list-large-detail-width;
-					vertical-align: middle;
-					.ie7-inline-block;
+				/* Product Item*/
+				.product-item {
 
-					.info {
-						display: inline-block;
+					/* Product detail */
+					.detail {
+						display: @product-block-list-large-detail-display;
+						width: @product-block-list-large-detail-width;
+						vertical-align: middle;
+						.ie7-inline-block;
+
+						.info {
+							display: inline-block;
+						}
 					}
 				}
 			}
@@ -257,8 +262,13 @@
 				float: @product-block-grid-items-li-float;
 				width: @product-block-grid-items-li-width;
 
-				.detail {
-					display: @product-block-grid-detail-display;
+				/* Product Item*/
+				.product-item {
+
+					/* Product detail */
+					.detail {
+						display: @product-block-grid-detail-display;
+					}
 				}
 			}
 		}
