@@ -24,9 +24,7 @@
 @product-block-shadow: 											none;
 @product-block-font-size:										12px;
 
-/* --------------------------------------------------------------------------------------------------
-[Product block] Block Title
----------------------------------------------------------------------------------------------------*/
+/* -------------------- Block Title -------------------- */
 @product-block-title-display: 									block;
 @product-block-title-height:									auto;
 @product-block-title-margin:									0;
@@ -88,6 +86,7 @@
 @product-block-number-font-size:								25px;
 @product-block-number-line-height:								normal;
 
+/* -------------------- Product Image -------------------- */
 /* Product Image with link */
 /* Link */
 @product-block-image-link-display:								inline-block;
@@ -116,7 +115,7 @@
 @product-block-detail-display:									block;
 @product-block-detail-width:									auto;
 
-/* Product info */
+/* -------------------- Product info -------------------- */
 @product-block-info-display:									block;
 
 /* Product name */
@@ -128,25 +127,35 @@
 /* Product discription */
 @product-block-info-discription-display:						block;
 
-/* Product rating */
+
+/* -------------------- Product rating -------------------- */
 @product-block-rating-display:									block;
 
-/* Block Price */
+
+/* -------------------- Price Box -------------------- */
 @product-block-wrap-price-display:								block;
 
-/* Current Price */
-@product-block-price-display:									block;
+/* Discount */
+@product-block-discount-display:								inline;
+@product-block-discount-color:									@white;
+@product-block-discount-background:								@red;
+@product-block-discount-border-radius:							3px;
+@product-block-discount-padding:								2px 4px;
 
-/* p Save */
-@product-block-save-display:									block;
+/* Old price */
+@product-block-previous-box-display:							block;
+@product-block-previous-price-label-display:					inline-block;
+@product-block-previous-price-display:							inline-block;
+@product-block-previous-price-text-decoration:					line-through;
 
-/* Save price */
-@product-block-save-price-display:								block;
+/* Special Price */
+@product-block-special-box-display:								block;
+@product-block-special-price-label-display:						inline-block;
+@product-block-special-price-display:							inline-block;
+@product-block-special-price-color:								@red;
 
-/* Previous price */
-@product-block-previous-price-display:							block;
 
-/* Product buttons */
+/* -------------------- Product buttons -------------------- */
 @product-block-buttons-display:									block;
 
 /* Buttons */
@@ -215,7 +224,7 @@
 [Carousel] Container
 ---------------------------------------------------------------------------------------------------*/
 @carousel-container-width:										100%;
-@carousel-stage-height:											280px;
+@carousel-stage-height:											300px;
 @carousel-li-float:												left;
 @carousel-li-width:												464px;
 @carousel-item-border:											1px dotted #aaa;

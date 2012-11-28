@@ -5,7 +5,7 @@
  * @author      Damian Duda <dduda@nexway.com>
  * @package     base_default
  *
- * version 0.1.3
+ * version 0.1.4
  *
  */
 
@@ -153,26 +153,44 @@
 							display: @product-block-rating-display;
 						}
 
-						/* Block price */
-						.block-price {
+						/* Price Box */
+						.price-box {
 							display: @product-block-wrap-price-display;
 
-							/* Current price */
-							.price {
-								display: @product-block-price-display;
+							/* Old price */
+							.old-price {
+								display: @product-block-previous-box-display;
 
-								&.save {
-									display: @product-block-save-display;
+								.price-label {
+									display: @product-block-previous-price-label-display;
+								}
 
-									/* Save price */
-									.save-price {
-										display: @product-block-save-price-display;
-									}
+								.price {
+									display: @product-block-previous-price-display;
+									text-decoration: @product-block-previous-price-text-decoration;
+								}
 
-									/* Previous price */
-									.previous-price {
-										display: @product-block-previous-price-display;
-									}
+								.discount {
+									display: @product-block-discount-display;
+									color: @product-block-discount-color;
+									background: @product-block-discount-background;
+									.border-radius(@product-block-discount-border-radius);
+									padding: @product-block-discount-padding;
+								}
+							}
+
+							/* Special price */
+							.special-price {
+								display: @product-block-special-box-display;
+
+
+								.price-label {
+									display: @product-block-special-price-label-display;
+								}
+
+								.price {
+									display: @product-block-special-price-display;
+									color:	@product-block-special-price-color;
 								}
 							}
 						}

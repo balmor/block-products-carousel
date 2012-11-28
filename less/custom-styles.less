@@ -61,7 +61,7 @@
 								}
 							}
 
-							.block-price {
+							.price-box {
 								display: none;
 							}
 
@@ -188,6 +188,52 @@
 									}
 								}
 							}
+
+							/* Price Box */
+							.price-box {
+								display: @product-block-wrap-price-display;
+								padding: 7px 0;
+								text-align: center;
+								font-size: 11px;
+
+								/* Old price */
+								.old-price {
+									display: @product-block-previous-box-display;
+
+									.price-label {
+										display: none;
+									}
+
+									.price {
+										display: @product-block-previous-price-display;
+										color: #333;
+									}
+
+									.discount {
+										background: #BC1212;
+										color: @white;
+										.border-radius(4px);
+										padding: 3px 5px;
+										font-style: italic;
+									}
+								}
+
+								/* Special price */
+								.special-price {
+									display: @product-block-special-box-display;
+
+
+									.price-label {
+										display: none;
+									}
+
+									.price {
+										display: @product-block-special-price-display;
+										color: #BC1212;
+									}
+								}
+							}
+
 							/* Product buttons */
 							.product-buttons {
 								display: none;
@@ -385,29 +431,30 @@
 						}
 
 						/* Block price */
-						.block-price {
-							display: @product-block-wrap-price-display;
-							height: 22px;
-							overflow: hidden;
+						.price-box {
+							display: block;
 
-							/* Current price */
-							.price {
-								display: @product-block-price-display;
-
-								&.save {
-									display: none;
-
-									/* Save price */
-									.save-price {
-										display: @product-block-save-price-display;
-									}
-
-									/* Previous price */
-									.previous-price {
-										display: @product-block-previous-price-display;
-									}
-								}
+							/* Old price */
+							.old-price {
+								display: none;
 							}
+
+							/* Special price */
+							.special-price {
+								display: @product-block-special-box-display;
+								height: 22px;
+								line-height: 22px;
+								padding-top: 2px;
+
+								.price-label {
+									display: none;
+								}
+
+								.price {
+									display: @product-block-special-price-display;
+									color: #333;
+								}
+							}							
 						}
 
 						/* Product buttons */
