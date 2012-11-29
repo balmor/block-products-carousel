@@ -40,4 +40,4 @@ You can see how it works <a href="http://generic.balmor.eu/generic-block-carouse
 It also works on IE7+
 
 <h2>To do</h2>
-Some fixed and complete the generic less
+Some fixes and complete the generic less
