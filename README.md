@@ -38,3 +38,6 @@ If you want multiple carousels you can add new class to container (.block-produc
 You can see how it works <a href="http://generic.balmor.eu/generic-block-carousel/">here</a>.
 
 It also works on IE7+
+
+<h2>How it works</h2>
+Some fixed and complete the generic less
