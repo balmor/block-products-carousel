@@ -17,7 +17,7 @@ version 0.2.0
 
 You can use <a href="http://caroufredsel.dev7studios.com/">carouFredSel</a> or <a href="https://github.com/jsor/jcarousel">jCarousel 0.3</a> carousels
 
-Structure to show pagination and next & prev buttons you must set in javascript!
+Structure to show pagination, next & prev buttons you must set in javascript!
 
     <!-- Control -->
     <div class="control-wrap">
