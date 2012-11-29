@@ -418,9 +418,9 @@
                     <a href="#"><span>VIEW MORE</span></a>
                 </div>
             </div>
-            
+
             <!-- Wrapper Product Block -->
-            <div class="product-block display-carousel fred">
+            <div class="product-block display-carousel boonty top-slider">
                 <!-- Block Title -->
                 <h3 class="block-title"><span class="icon"></span>BLOCK TITLE</h3>
                 <h5 class="block-subtitle">BLOCK SUB-TITLE</h5>
@@ -437,7 +437,7 @@
                                 <!-- Product image with link -->
                                 <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
                                 <!-- Product image without link -->
-                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <img class="image" src="http://placehold.it/952x315/6A8AB1/ffffff" width="952" height="315" alt="" itemprop="image" />
                                 <!-- Product detail -->
                                 <div class="detail">
                                     <!-- Product info -->
@@ -481,9 +481,9 @@
                                 <span class="number">2</span>
                                 <!-- Product image -->
                                 <!-- Product image with link -->
-                                <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
+                                <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/69AF70/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
                                 <!-- Product image without link -->
-                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt=""itemprop="image" />
+                                <img class="image" src="http://placehold.it/952x315/69AF70/ffffff" width="952" height="315" alt="" itemprop="image" />
                                 <!-- Product detail -->
                                 <div class="detail">
                                     <!-- Product info -->
@@ -529,7 +529,7 @@
                                 <!-- Product image with link -->
                                 <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
                                 <!-- Product image without link -->
-                                <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                                <img class="image" src="http://placehold.it/952x315/AF699D/ffffff" width="952" height="315" alt="" itemprop="image" />
                                 <!-- Product detail -->
                                 <div class="detail">
                                     <!-- Product info -->
@@ -622,7 +622,7 @@
             </div>  
 
             <!-- Wrapper Product Block -->
-            <div class="product-block display-carousel fred">
+            <div class="product-block display-carousel default">
                 <!-- Block Title -->
                 <h3 class="block-title"><span class="icon"></span>BLOCK TITLE</h3>
                 <h5 class="block-subtitle">BLOCK SUB-TITLE</h5>
@@ -848,37 +848,7 @@
   
         $(function() {
 
-            /* ----- carouFredSel ----- */
-
-            // Create Pagination
-            $('.fred .product-stage').after('<div class="carousel-pagination pages"></div>');
-            // Create Prev & Next Button
-            $('.fred .product-stage').after('<div class="control-wrap"><a class="control carousel-prev" href="#"><span>prev</span></a> <a class="control carousel-next" href="#"><span>next</span></a></div>');
-
-            // Run the carouFredSel
-            $(".fred .product-items").carouFredSel({
-                circular    : false,
-                infinite    : false,
-                auto        : false,
-                prev        : ".fred .carousel-prev",
-                next        : ".fred .carousel-next",             
-                pagination  : ".pages"
-            });
-
-            // Create Pagination
-            $('.fred2 .product-stage').after('<div class="carousel-pagination pages"></div>');
-            // Create Prev & Next Button
-            $('.fred2 .product-stage').after('<div class="control-wrap"><a class="control carousel-prev" href="#"><span>prev</span></a> <a class="control carousel-next" href="#"><span>next</span></a></div>');            
-
-            // Run the carouFredSel
-            $(".fred2 .product-items").carouFredSel({
-                circular    : true,
-                infinite    : false,
-                auto        : true,
-                prev        : ".fred2 .carousel-prev",
-                next        : ".fred2 .carousel-next", 
-                pagination  : ".fred2 .pages"
-            });  
+            /* ----- carouFredSel Bons Plans ----- */
 
             // Create Prev & Next Button
             $('.bons .product-stage').after('<div class="control-wrap"><a class="control carousel-prev" href="#"><span>prev</span></a> <a class="control carousel-next" href="#"><span>next</span></a></div>');            
@@ -890,7 +860,36 @@
                 auto        : false,
                 prev        : ".bons .carousel-prev",
                 next        : ".bons .carousel-next"
-            });                        
+            });   
+
+            /* ----- carouFredSel Boonty Top Slider ----- */
+
+            // Create Pagination
+            $('.top-slider .product-stage').after('<div class="carousel-pagination pages"></div>');            
+
+            // Run the carouFredSel
+            $(".top-slider .product-items").carouFredSel({
+                circular    : false,
+                infinite    : true,
+                auto        : true,
+                pagination  : ".top-slider .pages"
+            });              
+
+            /* ----- carouFredSel default ----- */
+            // Create Pagination
+            $('.default .product-stage').after('<div class="carousel-pagination pages"></div>');
+            // Create Prev & Next Button
+            $('.default .product-stage').after('<div class="control-wrap"><a class="control carousel-prev" href="#"><span>prev</span></a> <a class="control carousel-next" href="#"><span>next</span></a></div>');
+
+            // Run the carouFredSel
+            $(".default .product-items").carouFredSel({
+                circular    : true,
+                infinite    : false,
+                auto        : true,
+                prev        : ".default .carousel-prev",
+                next        : ".default .carousel-next",             
+                pagination  : ".default .pages"
+            });                                 
         });
 
     </script>

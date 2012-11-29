@@ -6,6 +6,10 @@
 
 // BLOCKS STYLES
 
+.default {
+	clear: both;
+	margin-top: 20px;
+}
 
 .boonty {
 	display: block;
@@ -17,6 +21,7 @@
 	font-family: @font-family-1;
 	color: #333;
 
+	/* -- TOP PRODUCT -- */
 	&.top-product {
 
 		.block-title {
@@ -76,6 +81,7 @@
 		}
 	}
 
+	/* -- CAROUSEL BONS PLANS -- */
 	&.bons {
 		width: 598px;
 		margin: 30px auto 20px;
@@ -338,6 +344,257 @@
 	        display: @block-carousel-pagination-display;
 	        display: block;
 	    }		
+	}
+
+	/* -- CAROUSEL TOP SLIDER -- */
+	&.top-slider {
+	    width: 952px;
+	    color: @white;
+
+	    .block-title {
+	    	display: none;
+	    }
+
+	    .product-stage {
+	    	width: 952px;
+	    	height: 315px;
+    		
+
+    		.product-items {
+
+    			li {
+    				width: 952px;
+    				height: 315px;
+
+					.product-item {
+						height: 315px;
+						
+						position: relative;
+						border: none;
+
+						/* Product List Number */
+						.number {
+							display: none;
+						}
+
+						/* Product Image with link */
+						.image-link {
+							display: none;
+						}
+
+						/* Product Image without link */
+						.image {
+							display: block;
+							position: absolute;
+						}
+
+						/* Product detail */
+						.detail {
+							position: absolute;
+							display: @product-block-detail-display;
+							left: 0;
+							bottom: 0;
+							width: 100%;
+	                        background: rgba(0,0,0,.4);
+	                        border-top: 1px solid rgba(255,255,255,.7);
+	                        height: 68px;							
+
+							/* Product info */
+							.info {
+								display: block;
+								float: left;
+								text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+								color: @white;
+								padding: 6px 0 0 15px;
+								width: 470px;
+
+								/* Product name */
+								.product-name {
+									display: @product-block-info-name-display;
+									height: 17px;
+									line-height: 17px;
+									font-weight: 700;
+
+									a {
+										font: arial;
+										color: @white;
+										font-size: 13px;
+
+										&:hover {
+											color: @white;
+											text-shadow: none;
+										}
+									}
+								}
+
+								/* Product category */
+								.product-category {
+									display: block;
+									position: absolute;
+									top: -247px;
+									left: 0;
+									width: 100%;
+			                        border-top: 1px solid #7c7c7c;
+			                        border-bottom: 1px solid rgba(255,255,255,.7);
+			                        height: 30px;
+			                        background: rgba(0,0,0,.4);
+			                        line-height: 30px;
+			                        color: @white;
+		                        	padding-left: 20px;
+		                        	font-size: 13px;
+								}
+
+								/* Product discription */
+								.discription {
+									display: @product-block-info-discription-display;
+								}
+							}
+
+							/* Product rating */
+							.rating { 
+								display: none;
+							}
+
+							/* Price Box */
+							.price-box {
+								display: block;
+								float: left;
+								text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+								padding: 22px 20px 0;
+
+								/* Old price */
+								.old-price {
+									display: inline-block;
+
+
+									.price-label {
+										display: none;
+									}
+
+									.price {
+										display: @product-block-previous-price-display;
+										text-decoration: @product-block-previous-price-text-decoration;
+										font-size: 17px;
+									}
+
+									.discount {
+										display: none;
+									}
+								}
+
+								/* Special price */
+								.special-price {
+									display: inline-block;
+									margin-left: 15px;
+
+									.price-label {
+										display: none;
+									}
+
+									.price {
+										display: @product-block-special-price-display;
+										color:	@white;
+										font-size: 24px;
+									}
+								}
+							}
+
+							/* Product buttons */
+							.product-buttons {
+								display: block;
+								float: left;
+								padding-top: 20px;
+
+								/* Buttons */
+								.btn {
+									display: @product-block-btn-display;
+									font-size: 15px;
+									color: @white;
+									height:36px;
+									width:164px;
+									line-height: 36px;
+									.border-radius(3px);
+									text-align:center;
+
+									/* Button add to cart */
+									&.add-to-cart {
+										display: @product-block-btn-add-to-cart;
+										#gradient .vertical-three-colors(#E82A72,#EB2F76,50%,#DD1863);
+										text-shadow:0 1px 0 rgba(0,0,0,.2);
+										color: @white;
+
+										&:before {
+											display: none;
+										}
+									}
+
+									/* Button add to wishlist */
+									&.add-to-wishlist {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+    			}
+    		}
+	    }
+
+		/* Control */
+		.control-wrap {
+		    display: none;
+		}
+
+		/* Pagination */
+		.carousel-pagination {
+		    display: block;
+	        position: absolute;
+	        right: 30px;
+	        top: 40px;
+	        border: 1px solid rgb(200,200,200);
+	        border: 1px solid rgba(200,200,200,.5);
+	        background: rgba(0,0,0,.1);
+	        padding: 5px 14px;
+	        text-align: center;
+	        .border-radius(5px);
+
+	        a {
+	            .hide-texts;
+	            background: #aaa;
+	            .square(14px);
+	            display: block;
+	            float: left;
+	            margin-left: 10px;
+	            .border-radius(50%);
+	            @shadow: 0 0 4px rgba(0,0,0,.8),inset 1px -1px 3px rgba(0,0,0,.25);
+	            .box-shadow(@shadow);
+	            .opacity(80);
+
+	            &:first-child {
+	                margin: 0;
+	            }
+
+	            &.selected {
+	                background: #c3c3c3;
+	                .opacity(100);
+	                cursor: default;
+
+	                &:hover {
+	                    background: #c3c3c3;
+	                }
+	            }
+
+	            &:hover {
+	                background: #dcdcdc;
+	                .opacity(100);
+	            }
+	        }		    
+		}	    
+
+		/* Bottom text */
+		.bottom-text {
+			display: none;
+		}    
 	}
 
 	/* Block Title */
