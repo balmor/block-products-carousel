@@ -27,7 +27,11 @@ Structure to show pagination, next & prev buttons you must set in javascript!
     <!-- Pagination -->
     <div class="carousel-pagination"></div>
 
-If you want multiple carousels you can add new class to container (.block-product) and add custom styles.
+If you want multiple carousels you can add new class to container (.block-product) and add custom styles for example:
+    <!-- Control -->
+    <div class="product-block display-carousel custom-styles">
+    	...
+    </div>
 
 <h2>How it works</h2>
 You can see how it works <a href="http://generic.balmor.eu/generic-block-carousel/">here</a>.
