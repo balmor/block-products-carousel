@@ -2,7 +2,7 @@ Generic HTML/LESS Block Product/Carousel
 ================
 
 <h2>Version</h2>
-version 0.2.0
+version 0.2.1
 
 <h2>Documentation</h2>
 
