@@ -5,7 +5,7 @@
  * @author      Damian Duda <dduda@nexway.com>
  * @package     base_default
  *
- * version 0.1.4
+ * version 0.2.0
  *
  */
 
@@ -290,7 +290,7 @@
 				}
 			}
 		}
-	}	
+	}
 
 	/* Display Carousel */
 	&.display-carousel {
@@ -325,7 +325,7 @@
 
 	        .control {
 
-	            &.inactive {
+	            &.disabled, &.inactive {
 	                cursor: default;
 	            }
 
@@ -333,27 +333,27 @@
 	                
 	            }
 
-	            &.jcarousel-prev {
+	            &.carousel-prev {
 	                
 	            }
 
-	            &.jcarousel-next {
+	            &.carousel-next {
 	                
 	            }
 	        }
 	    }
 
 	    /* Pagination */
-	    .jcarousel-pagination {
+	    .carousel-pagination {
 	        display: @carousel-pagination-display;
 
 	        a {
 
-	            &.active {
+	            &.selected, &.active {
 	                cursor: default;
 	                color: @red;
 	            }
 	        }
-	    }		
+	    }
 	}
 }
