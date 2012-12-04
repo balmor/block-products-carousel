@@ -5,7 +5,7 @@
  * @author      Damian Duda <dduda@nexway.com>
  * @package     base_default
  *
- * version 0.2.2
+ * version 0.2.3
  *
  */
 
@@ -13,7 +13,7 @@
 
 /* Wrapper Product Block */
 .product-block {
-	clear: both;
+	clear: @product-block-both;
 	position: relative;
 	width: @product-block-width;
 	height: @product-block-height;
@@ -329,7 +329,7 @@
 
 	        .control {
 
-	            &.disabled, &.inactive {
+	            &.disabled {
 	                cursor: default;
 	            }
 
@@ -353,7 +353,7 @@
 
 	        a {
 
-	            &.selected, &.active {
+	            &.selected {
 	                cursor: default;
 	                color: @red;
 	            }

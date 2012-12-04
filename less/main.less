@@ -248,3 +248,76 @@ button {
 .container {
     padding-bottom: 100px;
 }
+
+.choose-display {
+    margin: 0 auto 15px;
+
+    a {
+        font-size: 14px;
+        margin-left: 5px;
+        display: inline-block;
+        .size(40px,45px);
+        #gradient .vertical(@white,#eee);
+        .border-radius(5px);
+        border: 1px solid #bbb;
+        border-bottom: 1px solid #aaa;
+        @shadow: inset 0 -3px 6px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.1);
+        .box-shadow(@shadow);   
+        .transition(all .1s linear);
+
+        &:hover {
+            #gradient .vertical(@white,#ddd);
+        }
+
+        span {
+            background: url("@{image-path}/display.png") no-repeat;
+            .square(30px);
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        &.tcolumn span {
+            background-position: 0 0;
+        }
+
+        &.tlist span {
+            background-position: 0 -30px;
+        }
+
+        &.tgrid span {
+            background-position: 0 -90px;
+        }
+
+        &.actv {
+            #gradient .vertical(#eee,#ddd);
+            @shadow: inset 0 2px 4px rgba(0,0,0,.2);
+            .box-shadow(@shadow);
+            cursor: default;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+.content {
+    clear: both;
+    margin: 10px 0;
+    
+    #mytabs {
+
+        li {
+
+            &.active a {
+                color: darken(@orange,5%);
+            }
+
+            a {
+                color: @orange;
+                line-height: 20px;
+                font: 20px @font-family-2;
+                outline: none;
+            }
+        }
+    }   
+}
