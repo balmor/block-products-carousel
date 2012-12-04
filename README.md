@@ -2,7 +2,7 @@ Generic HTML/LESS Block Product/Carousel
 ================
 
 <h2>Version</h2>
-version 0.2.2
+version 0.2.3
 
 <h2>Documentation</h2>
 
@@ -36,7 +36,7 @@ If you want multiple carousels you can add new class to container (.block-produc
 ```
 
 <h2>How it works</h2>
-You can see how it works <a href="http://generic.balmor.eu/generic-block-carousel/">here</a>.
+You can see how it works <a href="http://generic.balmor.eu/block-carousel/">here</a>.
 
 It also works on IE7+
 
