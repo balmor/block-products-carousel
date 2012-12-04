@@ -17,6 +17,14 @@ version 0.2.3
 
 You can use <a href="http://caroufredsel.dev7studios.com/">carouFredSel</a> or <a href="https://github.com/jsor/jcarousel">jCarousel 0.3</a> carousels
 
+If you want multiple carousels you can add new class to container (.block-product) and add custom styles for example:
+```html
+    <!-- Wrapper Product Block -->
+    <div class="product-block display-carousel custom-styles">
+        ...
+    </div>
+```
+
 Structure to show pagination, next & prev buttons you must set in javascript!
 ```html
     <!-- Control -->
@@ -26,13 +34,6 @@ Structure to show pagination, next & prev buttons you must set in javascript!
     </div>
     <!-- Pagination -->
     <div class="carousel-pagination"></div>
-```
-If you want multiple carousels you can add new class to container (.block-product) and add custom styles for example:
-```html
-    <!-- Wrapper Product Block -->
-    <div class="product-block display-carousel custom-styles">
-    	...
-    </div>
 ```
 
 and example code javascript to run carousel:
