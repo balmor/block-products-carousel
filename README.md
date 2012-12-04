@@ -35,6 +35,26 @@ If you want multiple carousels you can add new class to container (.block-produc
     </div>
 ```
 
+and example code javascript to run carousel:
+
+```javascript
+    /* ----- carouFredSel default ----- */
+    // Create Pagination
+    $('.default .product-stage').after('<div class="carousel-pagination pages"></div>');
+    // Create Prev & Next Button
+    $('.default .product-stage').after('<div class="control-wrap"><a class="control carousel-prev" href="#"><span>prev</span></a> <a class="control carousel-next" href="#"><span>next</span></a></div>');
+
+    // Run the carouFredSel
+    $(".default .product-items").carouFredSel({
+        circular    : true,
+        infinite    : false,
+        auto        : true,
+        prev        : ".default .carousel-prev",
+        next        : ".default .carousel-next",             
+        pagination  : ".default .pages"
+    });   
+```
+
 <h2>How it works</h2>
 You can see how it works <a href="http://generic.balmor.eu/block-carousel/">here</a>.
 
