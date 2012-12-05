@@ -300,24 +300,31 @@ button {
         }
     }
 }
-.content {
-    clear: both;
+
+#tabs {
     margin: 10px 0;
-    
-    #mytabs {
+
+    .nav-tabs {
 
         li {
 
-            &.active a {
-                color: darken(@orange,5%);
-            }
-
             a {
-                color: @orange;
+                color: darken(@orange,10%);
                 line-height: 20px;
                 font: 20px @font-family-2;
-                outline: none;
+                outline: none;            
+            }
+
+            &.ui-state-active {
+
+                a {
+                    #gradient .vertical(#f9f9f9,@white);
+                    color: @orange;
+                    border: 1px solid #ddd;
+                    border-bottom-color: transparent;
+                    cursor: default;                    
+                }
             }
         }
-    }   
+    }
 }
