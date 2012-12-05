@@ -80,7 +80,7 @@ and generic HTML (we can't change this html, only add class to container "produc
     </div> 
 ```
 
-<h5>Block products</h5>
+<h6>Block products</h6>
 We just add class to html .product-block for display:
 
 .display-column  -  In Column (set default) <br>
@@ -95,7 +95,7 @@ Example :
     </div>  
 ```
 
-<h5>Carousel products</h5>
+<h6>Carousel products</h6>
 To run carousel just add class:
 
 .display-carousel (you must set js)
