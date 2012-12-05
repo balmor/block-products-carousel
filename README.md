@@ -6,7 +6,10 @@ version 0.2.4
 
 <h2>Documentation</h2>
 
-<h6>Require files:</h6><br>
+<h6>Require files:</h6>
+[blocks-foundation.less](https://github.com/balmor/block-products-carousel/blob/master/less/blocks-foundation.less)
+[vars-blocks.less](https://github.com/balmor/block-products-carousel/blob/master/less/vars-blocks.less)
+
 blocks-foundation.less (don't change this file, if you want change style you must add new file like "custom-styles.less")<br>
 vars-blocks.less (you can set generic styles)<br>
 
