@@ -121,7 +121,7 @@ Structure to show pagination, next & prev buttons you must set in javascript!
     <div class="carousel-pagination"></div>
 ```
 
-and example code javascript to run carousel:
+and javascript code example to run carousel:
 
 ```javascript
     /* ----- carouFredSel default ----- */
