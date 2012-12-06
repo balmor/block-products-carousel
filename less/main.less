@@ -301,30 +301,25 @@ button {
     }
 }
 
-#tabs {
-    margin: 20px 0;
+#mytabs {
+    li {
+        a {
+            color: darken(@orange,10%);
+            line-height: 20px;
+            font: 20px @font-family-2;
+            outline: none;      
+        }
 
-    .nav-tabs {
-
-        li {
-
+        &.active {
             a {
-                color: darken(@orange,10%);
-                line-height: 20px;
-                font: 20px @font-family-2;
-                outline: none;            
-            }
-
-            &.ui-state-active {
-
-                a {
-                    #gradient .vertical(#f9f9f9,@white);
-                    color: @orange;
-                    border: 1px solid #ddd;
-                    border-bottom-color: transparent;
-                    cursor: default;                    
-                }
+                #gradient .vertical(#f9f9f9,@white);
+                color: @orange;                
             }
         }
     }
+}
+
+.cont {
+    padding: 40px 0;
+    clear: both;
 }
