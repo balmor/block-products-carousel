@@ -19,7 +19,6 @@
 	height: @product-block-height;
 	margin: @product-block-margin;
 	padding: @product-block-padding;	
-	#gradient .vertical(@product-block-gradient-start,@product-block-gradient-end);
 	.border-radius(@product-block-border-radius);
 	border: @product-block-border;
 	.box-shadow(@product-block-shadow);
@@ -32,7 +31,6 @@
 		height: @product-block-title-height;
 		margin: @product-block-title-margin;
 		padding: @product-block-title-padding;
-		#gradient .vertical(@product-block-title-gradient-start,@product-block-title-gradient-end);
 		.border-radius(@product-block-title-border-radius);
 		border: @product-block-title-border;
 		.box-shadow(@product-block-title-shadow);
@@ -56,6 +54,9 @@
 
 	/* Product Stage */
 	.product-stage {
+		height: @product-block-stage-height;
+		margin: @product-block-stage-margin;
+		padding: @product-block-stage-padding;		
 
 		/* Product Items */
 		.product-items {
@@ -63,8 +64,7 @@
 			width: @product-block-items-width;
 			height: @product-block-items-height;
 			margin: @product-block-items-margin;
-			padding: @product-block-items-padding;	
-			#gradient .vertical(@product-block-items-gradient-start,@product-block-items-gradient-end);
+			padding: @product-block-items-padding;
 			border: @product-block-items-border;	
 			.box-shadow(@product-block-items-shadow);	
 			
@@ -73,14 +73,16 @@
 				width: @product-block-li-width;
 				height: @product-block-li-height;
 				margin: @product-block-li-margin;
-				padding: @product-block-li-padding;	
-				#gradient .vertical(@product-block-li-gradient-start,@product-block-li-gradient-end);
+				padding: @product-block-li-padding;
 				.border-radius(@product-block-li-border-radius);
 				border: @product-block-li-border;	
 				.box-shadow(@product-block-li-shadow);	
 
 				/* Product Item*/
 				.product-item {
+					margin: @product-block-item-margin;
+					padding: @product-block-item-padding;	
+					border: @product-block-item-border;
 
 					/* Product List Number */
 					.number {
