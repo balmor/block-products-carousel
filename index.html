@@ -1774,6 +1774,8 @@
 
     <script src="js/jquery.carouFredSel-6.1.0-packed.js" type="text/javascript"></script>
 
+    <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+
     <script src="js/bootstrap-tab.js" type="text/javascript"></script>
     
     <script type="text/javascript">
@@ -1830,14 +1832,14 @@
                 next        : ".default .carousel-next",             
                 pagination  : ".default .pages"
             });                     
-        });
+
 
         //* ----- jCarousel setting ----- */
 
-        $(function() {
-
             // Create Pagination
             $('.jcarousel .product-stage').after('<div class="carousel-pagination pages"></div>');
+
+            $('input').before('<div class="carousel-pagination pages"></div>');
 
             // Create Prev & Next Button
             $('.jcarousel .product-stage').after('<div class="control-wrap"><a class="control carousel-prev" href="#"><span>prev</span></a> <a class="control carousel-next" href="#"><span>next</span></a></div>');            

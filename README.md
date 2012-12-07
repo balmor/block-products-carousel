@@ -19,8 +19,8 @@ and generic HTML (we can't change this html, only add class to container "produc
         <h5 class="block-subtitle">BLOCK SUB-TITLE</h5>
         <!-- Product Stage -->
         <div class="product-stage">
-            <!-- Product Items -->
-            <ul class="product-items">
+            <!-- Product Clip -->
+            <ul class="product-clip">
                 <li itemtype="http://data-vocabulary.org/Product" itemscope="">
                     <!-- Item -->
                     <div class="product-item">
@@ -131,7 +131,7 @@ and javascript code example to run carousel:
     $('.custom-styles .product-stage').after('<div class="control-wrap"><a class="control carousel-prev" href="#"><span>prev</span></a> <a class="control carousel-next" href="#"><span>next</span></a></div>');
 
     // Run the carouFredSel
-    $(".custom-styles .product-items").carouFredSel({
+    $(".custom-styles .product-clip").carouFredSel({
         circular    : true,
         infinite    : false,
         auto        : true,
