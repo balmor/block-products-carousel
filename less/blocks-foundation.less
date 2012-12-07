@@ -5,7 +5,7 @@
  * @author      Damian Duda <dduda@nexway.com>
  * @package     base_default
  *
- * version 0.2.5
+ * version 0.2.6
  *
  */
 
@@ -58,15 +58,15 @@
 		margin: @product-block-stage-margin;
 		padding: @product-block-stage-padding;		
 
-		/* Product Items */
-		.product-items {
-			overflow: @product-block-items-oveflow;
-			width: @product-block-items-width;
-			height: @product-block-items-height;
-			margin: @product-block-items-margin;
-			padding: @product-block-items-padding;
-			border: @product-block-items-border;	
-			.box-shadow(@product-block-items-shadow);	
+		/* Product Clip */
+		.product-clip {
+			overflow: @product-block-clip-oveflow;
+			width: @product-block-clip-width;
+			height: @product-block-clip-height;
+			margin: @product-block-clip-margin;
+			padding: @product-block-clip-padding;
+			border: @product-block-clip-border;	
+			.box-shadow(@product-block-clip-shadow);	
 			
 			li {
 				float: @product-block-li-float;
@@ -242,11 +242,11 @@
 	/* Display Product In List */
 	&.display-list {
 
-		.product-items {
+		.product-clip {
 
 			li {
-				float: @product-block-list-large-items-li-float;
-				width: @product-block-list-large-items-li-width;
+				float: @product-block-list-large-li-float;
+				width: @product-block-list-large-li-width;
 
 				/* Product Item*/
 				.product-item {
@@ -270,11 +270,11 @@
 	/* Display Product In Grid */
 	&.display-grid {
 
-		.product-items {
+		.product-clip {
 
 			li {
-				float: @product-block-grid-items-li-float;
-				width: @product-block-grid-items-li-width;
+				float: @product-block-grid-li-float;
+				width: @product-block-grid-li-width;
 
 				/* Product Item*/
 				.product-item {
@@ -298,8 +298,8 @@
 	        /* You need at least a height, adjust this to your needs */
 	        height: @carousel-stage-height;
 
-	        /* Product Items */
-	        .product-items {
+	        /* Product Clip */
+	        .product-clip {
 	            width: 20000em;
 	            position: absolute;
 	            list-style: none;
@@ -313,7 +313,6 @@
 	                /* Product Item */
 	                .product-item {
 	                	height: @carousel-item-height;
-	                	border: @carousel-item-border;
 
 	                	/* Caption */
 	                	.caption {

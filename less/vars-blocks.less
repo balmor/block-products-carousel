@@ -31,7 +31,7 @@
 @product-block-title-border-radius:								2px;
 @product-block-title-border:									none;
 @product-block-title-shadow: 									none;
-@product-block-title-color: 									@green;
+@product-block-title-color: 									auto;
 @product-block-title-font-size:									18px;
 @product-block-title-line-height:								30px;
 /* Block Sub-Title */
@@ -42,7 +42,7 @@
 @product-block-subtitle-padding:								0 10px;
 @product-block-subtitle-border:									0;
 @product-block-subtitle-shadow:									none;
-@product-block-subtitle-color: 									@green;
+@product-block-subtitle-color: 									auto;
 @product-block-subtitle-font-size:								14px;
 @product-block-subtitle-line-height:							24px;
 
@@ -53,19 +53,19 @@
 @product-block-stage-height:									auto;
 @product-block-stage-margin:									0;
 @product-block-stage-padding:									0;
-/* Product Items */
-@product-block-items-oveflow:									auto;
-@product-block-items-width:										auto;
-@product-block-items-height:									auto;
-@product-block-items-margin:									0;
-@product-block-items-padding: 									10px;
-@product-block-items-border:									none;
-@product-block-items-shadow:									none;
+/* Product Clip */
+@product-block-clip-oveflow:									auto;
+@product-block-clip-width:										auto;
+@product-block-clip-height:										auto;
+@product-block-clip-margin:										0;
+@product-block-clip-padding: 									0;
+@product-block-clip-border:										none;
+@product-block-clip-shadow:										none;
 /* Product LI */
 @product-block-li-float:										none;
 @product-block-li-width:										auto;
 @product-block-li-height:										auto;
-@product-block-li-margin:										0 0 10px;
+@product-block-li-margin:										0;
 @product-block-li-padding:										0;
 @product-block-li-border-radius:								0;
 @product-block-li-border:										none;
@@ -184,11 +184,11 @@
 /* DISPLAY PRODUCTS IN LIST */
 
 /* --------------------------------------------------------------------------------------------------
-[Product block] Items
+[Product block] Stage
 ---------------------------------------------------------------------------------------------------*/
 /* Product Items LI */
-@product-block-list-large-items-li-float:						none;
-@product-block-list-large-items-li-width:						auto;
+@product-block-list-large-li-float:								none;
+@product-block-list-large-li-width:								auto;
 /* Product detail */
 @product-block-list-large-detail-display:						inline-block;
 @product-block-list-large-detail-width:							40%;
@@ -198,11 +198,11 @@
 /* DISPLAY PRODUCTS IN GRID */
 
 /* --------------------------------------------------------------------------------------------------
-[Product block] Items
+[Product block] Stage
 ---------------------------------------------------------------------------------------------------*/
 /* Product Items LI */
-@product-block-grid-items-li-float: 							left;
-@product-block-grid-items-li-width:								50%;
+@product-block-grid-li-float: 									left;
+@product-block-grid-li-width:									50%;
 
 /* Product detail */
 @product-block-grid-detail-display:								block;
@@ -219,7 +219,7 @@
 @carousel-li-float:												left;
 @carousel-li-width:												469px;
 @carousel-item-height:											300px;
-@carousel-item-border:											1px dotted #aaa;
+
 @carousel-image-margin:											0 auto;
 @carousel-caption-display:										block;
 @carousel-caption-background:									rgba(0,0,0,.1);
