@@ -5,7 +5,7 @@
  * @author      Damian Duda <dduda@nexway.com>
  * @package     base_default
  *
- * version 0.2.6
+ * version 0.2.7
  *
  */
 
@@ -97,6 +97,16 @@
 						line-height: @product-block-number-line-height;
 					}
 
+					/* Product Image without link */
+					.image {
+						display: @product-block-image-display;
+						width: @product-block-image-width;
+						height: @product-block-image-height;
+						margin: @product-block-image-margin;
+						padding: @product-block-image-padding;
+						border: @product-block-image-border;			
+					}
+
 					/* Product Image with link */
 					.image-link {
 						display: @product-block-image-link-display;
@@ -113,16 +123,6 @@
 							padding: @product-block-image-link-img-padding;
 							border: @product-block-image-link-img-border;							
 						}
-					}
-
-					/* Product Image without link */
-					.image {
-						display: @product-block-image-display;
-						width: @product-block-image-width;
-						height: @product-block-image-height;
-						margin: @product-block-image-margin;
-						padding: @product-block-image-padding;
-						border: @product-block-image-border;			
 					}
 
 					/* Caption */

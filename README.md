@@ -2,7 +2,7 @@ Generic HTML/LESS Block Product/Carousel
 ================
 
 <h2>Version</h2>
-version 0.2.6
+version 0.2.7
 
 <h2>Documentation</h2>
 
@@ -27,10 +27,10 @@ and generic HTML (we can't change this html, only add class to container "produc
                         <!-- Number -->
                         <span class="number">1</span>
                         <!-- Product image -->
-                        <!-- Product image with link -->
-                        <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
                         <!-- Product image without link -->
                         <img class="image" src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" />
+                        <!-- Product image with link -->
+                        <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
                         <!-- Caption -->
                         <div class="caption"><p>Caption</p></div>
                         <!-- Product detail -->
