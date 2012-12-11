@@ -58,7 +58,7 @@
                                             <!-- Product image without link -->
                                             <img class="image" src="http://placehold.it/952x315/6A8AB1/ffffff" width="952" height="315" alt="" itemprop="image" />
                                             <!-- Product image with link -->
-                                            <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>                             
+                                            <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a>
                                             <!-- Caption -->
                                             <div class="caption"><p>Caption</p></div>
                                             <!-- Product detail -->
@@ -105,7 +105,7 @@
                                             <span class="number">2</span>
                                             <!-- Product image -->
                                             <!-- Product image without link -->
-                                            <img class="image" src="http://placehold.it/952x315/6A8AB1/ffffff" width="952" height="315" alt="" itemprop="image" />
+                                            <img class="image" src="http://placehold.it/952x315/69AF6E/ffffff" width="952" height="315" alt="" itemprop="image" />
                                             <!-- Product image with link -->
                                             <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a> 
                                             <!-- Caption -->
@@ -154,7 +154,7 @@
                                             <span class="number">3</span>
                                             <!-- Product image -->
                                             <!-- Product image without link -->
-                                            <img class="image" src="http://placehold.it/952x315/6A8AB1/ffffff" width="952" height="315" alt="" itemprop="image" />
+                                            <img class="image" src="http://placehold.it/952x315/AD6882/ffffff" width="952" height="315" alt="" itemprop="image" />
                                             <!-- Product image with link -->
                                             <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a> 
                                             <!-- Caption -->
@@ -203,7 +203,7 @@
                                             <span class="number">4</span>
                                             <!-- Product image -->
                                             <!-- Product image without link -->
-                                            <img class="image" src="http://placehold.it/952x315/6A8AB1/ffffff" width="952" height="315" alt="" itemprop="image" />
+                                            <img class="image" src="http://placehold.it/952x315/AAA868/ffffff" width="952" height="315" alt="" itemprop="image" />
                                             <!-- Product image with link -->
                                             <a class="image-link" href="#" title="" ><img src="http://placehold.it/120x80/4C4266/ffffff" width="120" height="80" alt="" itemprop="image" /></a> 
                                             <!-- Caption -->
@@ -1778,6 +1778,27 @@
 
             //* ----- carouFredSel setting ----- */
 
+            /* ----- carouFredSel Boonty Top Slider ----- */
+
+            // Create Pagination
+            $('.top-slider .product-stage').after('<div class="carousel-pagination pages"></div>');            
+
+            // Run the carouFredSel
+            $(".top-slider .product-clip").carouFredSel({
+                responsive  : false,
+                circular    : false,
+                infinite    : true,
+                auto        : true,
+                direction   : "left",
+                scroll      : {
+                                fx              : "scroll",
+                                easing          : "cubic",
+                                duration        : 700,                         
+                                pauseOnHover    : true
+                            },
+                pagination  : ".top-slider .pages"
+            });            
+
             /* ----- carouFredSel Bons Plans ----- */
 
             // Create Prev & Next Button
@@ -1790,19 +1811,6 @@
                 auto        : false,
                 prev        : ".bons .carousel-prev",
                 next        : ".bons .carousel-next"
-            });
-
-            /* ----- carouFredSel Boonty Top Slider ----- */
-
-            // Create Pagination
-            $('.top-slider .product-stage').after('<div class="carousel-pagination pages"></div>');            
-
-            // Run the carouFredSel
-            $(".top-slider .product-clip").carouFredSel({
-                circular    : false,
-                infinite    : true,
-                auto        : true,
-                pagination  : ".top-slider .pages"
             });
 
             /* ----- carouFredSel default ----- */
