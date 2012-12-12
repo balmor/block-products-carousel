@@ -41,8 +41,8 @@ and generic HTML (we can't change this html, only add class to container "produc
                                 <h4 class="product-name"><a href="#" itemprop="name">Product name</a></h4>
                                 <!-- Product category -->
                                 <a class="product-category" href="#" itemprop="category">Product category</a>
-                                <!-- Product discription -->
-                                <p class="discription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <!-- Product description -->
+                                <p class="product-description" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                             <!-- Product rating -->
                             <div class="rating" title="Quality" data-rating="4"></div>
