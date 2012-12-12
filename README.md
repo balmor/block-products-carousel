@@ -45,7 +45,7 @@ and generic HTML (we can't change this html, only add class to container "produc
                                 <p class="product-description" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                             <!-- Product rating -->
-                            <div class="rating" title="Quality" data-rating="4"></div>
+                            <div class="rating" title="Quality" data-rating="4"><meta itemprop="rating" content="4" /></div>
                             <!-- Price Box -->
                             <div class="price-box" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
                                 <meta content="EUR" itemprop="currency">

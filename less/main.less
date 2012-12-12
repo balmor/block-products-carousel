@@ -242,6 +242,64 @@ button {
     border: 0;
 }
 
+// RATING STARS
+
+.rating {
+    #rating .stars;
+}
+
+#rating {
+
+    // Internal mixin that helps to generate rating icons
+    // Usage ._compute(@size)
+    // ----------------------------------------------------------
+    // @size [px]       Size of icon (optional) defaults to 20px
+
+    ._compute (@size) {
+
+        @width:                     (@size * 5) + 5;
+        width:                      @width;
+        height:                     @size;
+
+        background-repeat:          no-repeat;
+        background-size:            @width (@size * 5);
+
+        // Handle 1 out 5 rating
+        &[data-rating="1"] {
+            background-position:    0 0;
+        }
+        // Handle 2 out 5 rating
+        &[data-rating="2"] {
+            background-position:    0 -(@size * 1);
+        }
+        // Handle 3 out 5 rating
+        &[data-rating="3"] {
+            background-position:    0 -(@size * 2);
+        }
+        // Handle 4 out 5 rating
+        &[data-rating="4"] {
+            background-position:    0 -(@size * 3);
+        }
+        // Handle 5 out 5 rating
+        &[data-rating="5"] {
+            background-position:    0 -(@size * 4);
+        }
+    }
+
+    // Star rating mixin
+    // Usage #rating .stars(@size, @name);
+    // ----------------------------------------------------------
+    // @size [px]       Size of rating star (optional) defaults to 20px
+    // @name [string]   Style of the rating icons, default classic
+
+    .stars (@size: 20px, @name: classic) when (@name = classic) {
+        background-image: url("@{image-path}/stars-sprite.png");
+        // We have to add 5 additional pixels
+        // to width to keep the aspect ratio on that image (21x20px)
+        #rating ._compute(@size);
+    }
+}
+
 
 ///////////////////////// OTHER SYTLE //////////////////////
 
