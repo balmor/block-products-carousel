@@ -294,71 +294,71 @@
 		/* Product Stage */
 		.product-stage {
 			position: relative;
-	        overflow: hidden;
-	        /* You need at least a height, adjust this to your needs */
-	        height: @carousel-stage-height;
+			overflow: hidden;
+			/* You need at least a height, adjust this to your needs */
+			height: @carousel-stage-height;
 
-	        /* Product Clip */
-	        .product-clip {
-	            width: 20000em;
-	            position: absolute;
-	            list-style: none;
-	            margin: 0;
-	            padding: 0;
+			/* Product Clip */
+			.product-clip {
+				width: 20000em;
+				position: absolute;
+				list-style: none;
+				margin: 0;
+				padding: 0;
 
-	        	li {
-	                float: @carousel-li-float;
-	                width: @carousel-li-width;
+				li {
+					float: @carousel-li-float;
+					width: @carousel-li-width;
 
-	                /* Product Item */
-	                .product-item {
-	                	height: @carousel-item-height;
+					/* Product Item */
+					.product-item {
+						height: @carousel-item-height;
 
-	                	/* Caption */
-	                	.caption {
-	                		display: @carousel-caption-display;
-	                		background: @carousel-caption-background;
-	                	}
-	                }
-	        	}
-	        }
+						/* Caption */
+						.caption {
+							display: @carousel-caption-display;
+							background: @carousel-caption-background;
+						}
+					}
+				}
+			}
 		}
 
-	    /* Control */
-	    .control-wrap {
-	        display: @carousel-control-display;
+		/* Control */
+		.control-wrap {
+			display: @carousel-control-display;
 
-	        .control {
+			.control {
 
-	            &.disabled {
-	                cursor: default;
-	            }
+				&.disabled {
+				    cursor: default;
+				}
 
-	            span {
-	                
-	            }
+				span {
+				    
+				}
 
-	            &.carousel-prev {
-	                
-	            }
+				&.carousel-prev {
+				    
+				}
 
-	            &.carousel-next {
-	                
-	            }
-	        }
-	    }
+				&.carousel-next {
+				    
+				}
+			}
+		}
 
-	    /* Pagination */
-	    .carousel-pagination {
-	        display: @carousel-pagination-display;
+		/* Pagination */
+		.carousel-pagination {
+			display: @carousel-pagination-display;
 
-	        a {
+			a {
 
-	            &.selected {
-	                cursor: default;
-	                color: @red;
-	            }
-	        }
-	    }
+				&.selected {
+					cursor: default;
+					color: @red;
+				}
+			}
+		}
 	}
 }
