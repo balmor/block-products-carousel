@@ -7,19 +7,16 @@ version 1.0.0
 <h2>Documentation</h2>
 
 <h6>Require files:</h6>
-[blocks-foundation.less](../resources/less/generic-product-carousel/blocks-foundation.less) - base file for magento, should be in (skin\frontend\base\default\css\catalog) - don't change this file <br>
-[blocks-variables.less](../resources/less/generic-product-carousel/blocks-variables.less) - you can edit variables for block products/carousel
+[blocks-foundation.less](less/blocks-foundation.less) - base file for magento, should be in (skin\frontend\base\default\css\catalog) - don't change this file <br>
+[blocks-variables.less](less/blocks-variables.less) - you can edit variables for block products/carousel
 and generic HTML (we can't change this html, only add class to container "product-block"):
 <h6>Optional files:</h6>
-<p>for Prices</p>
-[prices.less](../resources/less/generic-prices/prices.less) - don't change this file <br>
-[prices-variables.less](../resources/less/generic-prices/prices-variables.less) - and the local file variables
 <p>for Pagination</p>
-[pagination.less](../resources/less/generic-pagination/pagination.less) - base file for magento, don't change this file <br>
-[pagination-variables.less](../resources/less/generic-pagination/pagination-variables.less) - and the local file variables
+[pagination.less](less/pagination.less) - base file for magento, don't change this file <br>
+[pagination-variables.less](less/pagination-variables.less) - and the local file variables
 
 <h2>Block description</h2>  
-![BlockDescription](../resources/img/product-carousel/Description.jpg)
+![BlockDescription](img/product-carousel/Description.jpg)
 <h2>HTML Structure</h2>
 ```html
     <!-- Wrapper Product Block -->
@@ -114,7 +111,7 @@ and generic HTML (we can't change this html, only add class to container "produc
 <h6>We just add class to html .product-block for display:</h6>
 
 .display-column - In Column (set default) <br>
-![BlockColumn](../resources/img/product-carousel/Block-Display-block.jpg)  
+![BlockColumn](img/product-carousel/Block-Display-block.jpg)  
 Example :
 ```html
     <!-- Wrapper Product Block -->
@@ -123,7 +120,7 @@ Example :
     </div>
 ```  
 .display-list - In List <br>
-![blockList](../resources/img/product-carousel/Block-Display-List.jpg)  
+![blockList](img/product-carousel/Block-Display-List.jpg)  
 Example :
 ```html
     <!-- Wrapper Product Block -->
@@ -133,7 +130,7 @@ Example :
 ```  
 .display-grid<br>
 **2columns**
-![BlockGrid2col](../resources/img/product-carousel/Block-Display-Grid-2col.jpg)  
+![BlockGrid2col](img/product-carousel/Block-Display-Grid-2col.jpg)  
 Example:  
 ```html
     <div class="product-block display-grid">
@@ -152,11 +149,11 @@ Example:
 
 <h2>Block Product With Pagination</h2>
 <h6>Bottom pagination</h6>
-![BottomPagination](../resources/img/product-carousel/Block-Display-List-pagination.jpg)
+![BottomPagination](img/product-carousel/Block-Display-List-pagination.jpg)
 <h6>Top Pagination</h6>
-![TopPagination](../resources/img/product-carousel/Block-Pagination-top.jpg)
+![TopPagination](img/product-carousel/Block-Pagination-top.jpg)
 <h6>Top and Bottom Pagination</h6>
-![BothPagination](../resources/img/product-carousel/Block-Pagination-both.jpg)
+![BothPagination](img/product-carousel/Block-Pagination-both.jpg)
 Example HTML :  
 ```html
     <!-- Pagination -->
@@ -182,8 +179,8 @@ Example HTML :
     </ul>
 ```
 <h2>Simple block product carousel</h2>
-![SimpleCarousel](../resources/img/product-carousel/simple-carousel.jpg)
-![SimpleCarousel2](../resources/img/product-carousel/2Col-product-carousel.jpg)  
+![SimpleCarousel](img/product-carousel/simple-carousel.jpg)
+![SimpleCarousel2](img/product-carousel/2Col-product-carousel.jpg)  
 <h6>Carousel products</h6>
 
 To run carousel just add class:
