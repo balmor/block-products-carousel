@@ -237,6 +237,6 @@ and javascript code example to run carousel:
 ```
 
 <h2>How it works</h2>
-You can see how it works <a href="http://http://generic.balmor.eu/product-carousel/">here</a>.
+You can see how it works <a href="http://generic.balmor.eu/product-carousel/">here</a>.
 
 It also works on IE7+
