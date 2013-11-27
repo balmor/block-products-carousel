@@ -2,15 +2,25 @@ Generic HTML/LESS Block Product/Carousel
 ================
 
 <h2>Version</h2>
-version 0.2.7
+version 1.0.0
 
 <h2>Documentation</h2>
 
 <h6>Require files:</h6>
-[blocks-foundation.less](https://github.com/balmor/block-products-carousel/blob/master/less/blocks-foundation.less) - don't change this file, if you want change style you must add new file like "custom-styles.less" <br>
-[vars-blocks.less](https://github.com/balmor/block-products-carousel/blob/master/less/vars-blocks.less) - you can set generic styles
-
+[blocks-foundation.less](../resources/less/generic-product-carousel/blocks-foundation.less) - base file for magento, should be in (skin\frontend\base\default\css\catalog) - don't change this file <br>
+[blocks-variables.less](../resources/less/generic-product-carousel/blocks-variables.less) - you can edit variables for block products/carousel
 and generic HTML (we can't change this html, only add class to container "product-block"):
+<h6>Optional files:</h6>
+<p>for Prices</p>
+[prices.less](../resources/less/generic-prices/prices.less) - don't change this file <br>
+[prices-variables.less](../resources/less/generic-prices/prices-variables.less) - and the local file variables
+<p>for Pagination</p>
+[pagination.less](../resources/less/generic-pagination/pagination.less) - base file for magento, don't change this file <br>
+[pagination-variables.less](../resources/less/generic-pagination/pagination-variables.less) - and the local file variables
+
+<h2>Block description</h2>  
+![BlockDescription](../resources/img/product-carousel/Description.jpg)
+<h2>HTML Structure</h2>
 ```html
     <!-- Wrapper Product Block -->
     <div class="product-block">
@@ -49,12 +59,12 @@ and generic HTML (we can't change this html, only add class to container "produc
                             <!-- Price Box -->
                             <div class="price-box" itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails">
                                 <meta content="EUR" itemprop="currency">
-                                <!-- Special price -->  
+                                <!-- Special price -->
                                 <p class="old-price">
                                     <span class="price-label">Previous price:</span>
                                     <span class="price">4,39&nbsp;€</span>
-                                </p>                                        
-                                <!-- Current price -->    
+                                </p>
+                                <!-- Current price -->
                                 <p class="special-price" itemprop="price">
                                     <span class="price-label">Special price:</span>
                                     <span class="price">3,90&nbsp;€</span>
@@ -69,33 +79,113 @@ and generic HTML (we can't change this html, only add class to container "produc
                             </div>
                         </div>
                     </div>
-                </li>           
+                </li>
             </ul>
         </div>
-
         <!-- Bottom text -->
         <div class="bottom-text">
             <a href="#"><span>VIEW MORE</span></a>
         </div>
-    </div> 
+        <!-- Pagination -->
+            <ul class="pagination-container">
+                <li class="pagination-previous disabled">
+                    <a class="previous" href="#" title="Previous">«</a>
+                </li>
+                <li class="active">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="/">2</a>
+                </li>
+                <li class="disabled dots">
+                    <a href="#">...</a>
+                </li>
+                <li>
+                    <a href="/">158</a>
+                </li>
+                <li class="pagination-next">
+                    <a class="next" href="/" title="Next">»</a>
+                </li>
+            </ul>
+    </div>
 ```
 
-<h6>Block products</h6>
-We just add class to html .product-block for display:
+<h2>Block products</h2>
+<h6>We just add class to html .product-block for display:</h6>
 
-.display-column  -  In Column (set default) <br>
-.display-list    -  In List <br>
-.display-grid    -  In Grid <br>
-
+.display-column - In Column (set default) <br>
+![BlockColumn](../resources/img/product-carousel/Block-Display-block.jpg)  
+Example :
+```html
+    <!-- Wrapper Product Block -->
+    <div class="product-block display-column">
+        ...
+    </div>
+```  
+.display-list - In List <br>
+![blockList](../resources/img/product-carousel/Block-Display-List.jpg)  
 Example :
 ```html
     <!-- Wrapper Product Block -->
     <div class="product-block display-list">
         ...
-    </div>  
-```
+    </div>
+```  
+.display-grid<br>
+**2columns**
+![BlockGrid2col](../resources/img/product-carousel/Block-Display-Grid-2col.jpg)  
+Example:  
+```html
+    <div class="product-block display-grid">
+        ...
+    </div>
+```  
+**3columns**  
+We need to add class **'.grid-3columns'** to block
+![BlockGrid3col](../resources/img/product-carousel/Block-Display-Grid.jpg)  
+Example:  
+```html
+    <div class="product-block grid-3columns display-grid">
+        ...
+    </div>
+```  
 
+<h2>Block Product With Pagination</h2>
+<h6>Bottom pagination</h6>
+![BottomPagination](../resources/img/product-carousel/Block-Display-List-pagination.jpg)
+<h6>Top Pagination</h6>
+![TopPagination](../resources/img/product-carousel/Block-Pagination-top.jpg)
+<h6>Top and Bottom Pagination</h6>
+![BothPagination](../resources/img/product-carousel/Block-Pagination-both.jpg)
+Example HTML :  
+```html
+    <!-- Pagination -->
+    <ul class="pagination-container">
+        <li class="pagination-previous disabled">
+            <a class="previous" href="#" title="Previous">«</a>
+        </li>
+        <li class="active">
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="/">2</a>
+        </li>
+        <li class="disabled dots">
+            <a href="#">...</a>
+        </li>
+        <li>
+            <a href="/">158</a>
+        </li>
+        <li class="pagination-next">
+            <a class="next" href="/" title="Next">»</a>
+        </li>
+    </ul>
+```
+<h2>Simple block product carousel</h2>
+![SimpleCarousel](../resources/img/product-carousel/simple-carousel.jpg)
+![SimpleCarousel2](../resources/img/product-carousel/2Col-product-carousel.jpg)  
 <h6>Carousel products</h6>
+
 To run carousel just add class:
 
 .display-carousel (you must set js)
@@ -132,19 +222,24 @@ and javascript code example to run carousel:
 
     // Run the carouFredSel
     $(".custom-styles .product-clip").carouFredSel({
-        circular    : true,
-        infinite    : false,
+        responsive  : false,
+        circular    : false,
+        infinite    : true,
         auto        : true,
+        direction   : "left",
+        scroll      : {
+                        fx              : "scroll",
+                        easing          : "cubic",
+                        duration        : 700,
+                        pauseOnHover    : true
+                    },
         prev        : ".custom-styles .carousel-prev",
-        next        : ".custom-styles .carousel-next",             
+        next        : ".custom-styles .carousel-next",
         pagination  : ".custom-styles .pages"
-    });   
+    });
 ```
 
 <h2>How it works</h2>
-You can see how it works <a href="http://generic.balmor.eu/block-carousel/">here</a>.
+You can see how it works <a href="http://http://generic.balmor.eu/product-carousel/">here</a>.
 
 It also works on IE7+
-
-<h2>To do</h2>
-Some fixes and complete the generic less

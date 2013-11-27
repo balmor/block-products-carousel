@@ -268,7 +268,7 @@
 	        display: @carousel-control-display;
 
 	        .control {
-	            .hide-texts;
+	            .hide-text;
 	            position: absolute;
 	            display: block;
 	            background: #eee;
@@ -373,12 +373,12 @@
 
     			li {
     				width: 952px;
-    				height: 315px;
+    				// height: 315px;
 
 					.product-item {
-						height: 315px;
+						// height: 315px;
 						
-						position: relative;
+						// position: relative;
 						border: none;
 
 						/* Product List Number */
@@ -394,7 +394,8 @@
 						/* Product Image without link */
 						.image {
 							display: block;
-							position: absolute;
+                            .size(100%, 100%);
+							// position: absolute;
 						}
 
 						/* Caption */
@@ -577,7 +578,7 @@
 	        .border-radius(5px);
 
 	        a {
-	            .hide-texts;
+	            .hide-text;
 	            background: #aaa;
 	            .square(14px);
 	            display: block;

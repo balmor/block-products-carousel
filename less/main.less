@@ -7,8 +7,13 @@
 @import "variables.less";
 @import "fonts.less";
 
-@import "vars-blocks.less";
-@import "blocks-foundation.less";
+@import "pagination-variables.less"; /* variables pagination */
+@import "pagination.less"; /* foundation pagination */
+
+@import "blocks-variables.less"; /* variables product/carousel */
+@import "blocks-foundation.less"; /* foundation product/carousel */
+
+@import "3-columns-grid.less"; /* foundation 3 columns grid */
 
 @import "custom-styles.less";
 
@@ -46,6 +51,11 @@
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
+}
+
+.inline-block {
+    display: inline-block;
+    .ie7-inline-block;
 }
 
 

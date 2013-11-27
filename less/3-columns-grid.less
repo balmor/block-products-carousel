@@ -1,0 +1,31 @@
+/**
+ * GENERIC 3 COLUMNS GIRD - foundation
+ *
+ * @author  Damian Duda <dduda@nexway.com>
+ */
+
+ // 3 Columns Grid
+
+.product-block{
+
+    &.grid-3columns {
+        width: @product-block-3grid-container-width;
+
+        .product-clip {
+            margin: 0 auto;
+
+            li {
+               
+                width: @product-block-3grid-li-width;
+
+                .product-item {
+                    .detail {
+                        .inline-block;
+                        width: @product-block-3grid-detail-width;
+                        vertical-align: @product-block-3grid-detail-vertical-align;
+                    }
+                }
+            }
+        }
+    } 
+}

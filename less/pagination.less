@@ -1,0 +1,78 @@
+/**
+ * Generic Pagination - foundation
+ *
+ * @category    design
+ * @author      Damian Duda <dduda@nexway.com>
+ * @package     base_default
+ *
+ * version 0.1.0
+ *
+ */
+
+ // PAGINATION (PAGER)
+
+/* Pagination Wrapper */
+.pagination-container {
+    display: @pagination-display;
+    float: @pagination-float;
+    padding: @pagination-padding;
+    margin: @pagination-margin;
+    width: @pagination-width;
+    text-align: @pagination-text-align;
+    background: @pagination-background;
+
+    li {
+        .inline-block;
+        text-align: @pagination-link-text-align;
+        margin: @pagination-link-margin;
+
+        &.disabled {
+            a {
+                cursor: default;
+                background: @pagination-disabled-background;
+                border-color: @pagination-disabled-border-color;
+
+                &:hover {
+                    border-color: @pagination-disabled-border-color;
+                }
+            }
+
+            &.dots {
+                a {
+                    background: @pagination-disabled-dots-background;
+                    border-color: @pagination-disabled-dots-border-color;
+                }
+            }
+        }       
+
+        &.active {
+            a{
+                cursor: default;
+                background: @pagination-active-background;
+                border-color: @pagination-active-border-color;
+                .box-shadow(@pagination-active-box-shadow);
+
+                &:hover {
+                    border-color: @pagination-active-hover-border-color;
+                }                   
+            }
+        }
+
+        a {
+            display: block;
+            .size(@pagination-link-height,@pagination-link-width);
+            background: @pagination-link-background;
+            line-height: @pagination-link-line-height;
+            color: @pagination-link-color;
+            text-decoration: @pagination-link-text-decoration;
+            text-shadow: @pagination-link-text-shadow;
+            .border-radius(@pagination-link-border-radius);
+            font-size: @pagination-link-font-size;
+            border: @pagination-link-border;
+
+            &:hover {
+                border: @pagination-link-hover-border;
+            }
+        }
+    }
+}
